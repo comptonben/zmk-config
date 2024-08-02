@@ -17,14 +17,14 @@
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | ESC |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | RET |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |  '  |
-            //                    | GUI | LWR | BKS |   | SPC | RSE  | ALT |
+            //                    | GUI | LWR | SPC |   | BKS | RSE  | ALT |
 
             display-name = "Base";
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T            &kp Y      &kp U  &kp I      &kp O    &kp P     &kp ESCAPE
 &kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G            &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp RET
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B            &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp SQT
-                         &kp LGUI  &mo 1  &kp BACKSPACE    &kp SPACE  &mo 2  &kp RALT
+                         &kp LGUI  &mo 1  &kp SPACE    &kp BACKSPACE  &mo 2  &kp RALT
             >;
         };
 
@@ -33,14 +33,14 @@
             // |  TAB | F1  | F2  | F3  | F4  | F5  |   |  6  |  7  |  8  | F11 | F12 | ESC |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |  4  |  5  |  6  |  0  | UP  | RET |
             // | SHFT | F6  | F7  | F8  | F9  | F10 |   |  1  |  2  |  3  | LFT | DWN | RGT |
-            //                    | GUI |     | BKS |   | SPC |     | ALT |
+            //                    | GUI |     | SPC |   | BKS |     | ALT |
 
             display-name = "Lower";
             bindings = <
 &kp TAB     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5           &kp N7     &kp N8  &kp N9    &kp F11   &kp F12   &kp ESCAPE
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &kp N4     &kp N5  &kp N6    &kp N0    &kp UP    &kp RET
 &kp LSHFT   &kp F6        &kp F7        &kp F8        &kp F9        &kp F10          &kp N1     &kp N2  &kp N3    &kp LEFT  &kp DOWN  &kp RIGHT
-                                        &kp LGUI      &trans        &kp BACKSPACE    &kp SPACE  &trans  &kp RALT
+                                        &kp LGUI      &trans        &kp SPACE    &kp BACKSPACE  &trans  &kp RALT
             >;
         };
 
@@ -49,14 +49,14 @@
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  +  |  *  | "|" |  `  | ESC |
             // | CTRL |  &  |  (  |  )  |  _  |  ~  |   |  -  |  =  |  {  |  }  |  \  | RET |
             // | SHFT |     |     |     |     |     |   |     |     |  [  |  ]  |     |     |
-            //                    | HOM | END | BKS |   | SPC |     | ALT |
+            //                    | HOM | END | SPC |   | BKS |     | ALT |
 
             display-name = "Raise";
             bindings = <
 &kp TAB    &kp EXCL  &kp AT    &kp HASH  &kp DLLR   &kp PRCNT        &kp CARET  &kp PLUS   &kp KP_MULTIPLY  &kp PIPE  &kp GRAVE  &kp ESCAPE
 &kp LCTRL  &kp AMPS  &kp LPAR  &kp RPAR  &kp UNDER  &kp TILDE        &kp MINUS  &kp EQUAL  &kp LBRC         &kp RBRC  &kp BSLH   &kp RET
 &kp LSHFT  &trans    &trans    &trans    &trans     &trans           &trans     &trans     &kp LBKT         &kp RBKT  &trans     &trans
-                               &kp HOME  &kp END    &kp BACKSPACE    &kp SPACE  &trans     &kp RALT
+                               &kp HOME  &kp END    &kp SPACE    &kp BACKSPACE  &trans     &kp RALT
             >;
         };
     };
